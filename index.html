@@ -1,0 +1,45 @@
+<html>
+
+   <head>
+      <title>Angular 2 Calculator</title>
+
+      <!-- Load libraries -->
+      <script src="node_modules/es6-shim/es6-shim.js"></script>
+      <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+      <script src="node_modules/systemjs/dist/system.src.js"></script>
+      <script src="node_modules/rxjs/bundles/Rx.js"></script>
+      <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+      <!-- Configure SystemJS module loader -->
+      <script>
+         System.config({
+            packages: {
+               app: {
+                  format: 'register',
+                  defaultExtension: 'js'
+               }
+            }
+         });
+         System.import('app/boot')
+                 .then(null, console.error.bind(console));
+      </script>
+
+      <style>
+         button{
+            border: 1px solid black;
+            background-color: lightgray;
+            color: gray;
+         }
+         button.active{
+            border: 4px solid black;
+            color: black;
+         }
+      </style>
+   </head>
+
+   <body>
+       <!-- root component that is bootstrapping the application -->
+      <calculator-wrapper>Loading...</calculator-wrapper>
+   </body>
+
+</html>

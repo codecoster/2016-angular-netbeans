@@ -1,0 +1,9 @@
+/nbproject/private/
+/app/*.js
+/app/*.js.map
+/test/*.js
+/test/*.js.map
+/coverage/
+/node_modules/
+/npm-debug.log
+/typings/
